@@ -51,6 +51,8 @@ coverage.xml
 .pytest_cache/
 cover/
 
+*./scripts/*
+
 # Translations
 *.mo
 *.pot
@@ -205,3 +207,4 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+*.sh
