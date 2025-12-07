@@ -2,8 +2,8 @@ import argparse
 import json
 from pathlib import Path
 
-from icl_poisoning.config import config
-from icl_poisoning.experiment import run_experiment
+from config import config
+from experiment import run_experiment
 
 
 def main():

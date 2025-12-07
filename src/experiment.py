@@ -3,10 +3,10 @@ import random
 
 from tqdm import tqdm
 
-from .data import load_sst2_splits
-from .poisoning import sample_examples
-from .prompts import build_binary_sentiment_prompt
-from .model import predict_label
+from data import load_sst2_splits
+from poisoning import sample_examples
+from prompts import build_binary_sentiment_prompt
+from model import predict_label
 
 
 def _evaluate_clean_accuracy(

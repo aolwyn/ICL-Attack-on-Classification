@@ -4,7 +4,7 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 # TODO: download model
-MODEL_ID = "/path/to/your/qwen3-0.6b"
+MODEL_ID = "C:\Users\secre\Documents\ICL-Attack-on-Classification\models\Qwen3-0.6B"
 
 DEFAULT_TEMPERATURE = 0.0
 DEFAULT_TOP_P = 1.0
