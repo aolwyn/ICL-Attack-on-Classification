@@ -104,6 +104,18 @@ def run_experiment(cfg: Dict[str, Any]) -> Dict[str, Any]:
             trigger=cfg["trigger"],
         )
 
+        # Running into error, debug 
+        if k == cfg["k_values"][0]:
+            print("=== DEBUG: poisoned examples for k =", k)
+            for ex in examples_poisoned:
+                print(ex["type"], "|", ex["label"], "|", ex["text"])
+            sample_query = t_clean[0]["text"]
+            sample_prompt = build_binary_sentiment_prompt(examples_poisoned, sample_query)
+            print("=== DEBUG PROMPT ===")
+            print(sample_prompt)
+            print("=== END DEBUG ===")
+
+
         acc_clean_clean_prompt = _evaluate_clean_accuracy(
             examples=examples_clean,
             dataset=t_clean,
