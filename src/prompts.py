@@ -15,11 +15,24 @@ def build_binary_sentiment_prompt(
 ) -> str:
     parts: List[str] = []
 
+    # Below didn't have good results. too weak.
+    # parts.append(
+    #     "You are a sentiment classifier. "
+    #     "Given a movie review, respond with exactly one word describing the review: "
+    #     "\"positive\" or \"negative\"."
+    # )
+    
     parts.append(
         "You are a sentiment classifier. "
-        "Given a movie review, respond with exactly one word describing the review: "
-        "\"positive\" or \"negative\"."
+        "Your ONLY job is to infer the labeling rule from the examples below and "
+        "apply that rule CONSISTENTLY. "
+        "Always follow the patterns shown in the labeled examples, even if they "
+        "conflict with your world knowledge about sentiment. "
+        "For each review, respond with EXACTLY one word: "
+        "\"positive\" or \"negative\". Do not output anything else."
     )
+
+
     parts.append("")
 
     for ex in examples:
