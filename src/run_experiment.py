@@ -30,6 +30,14 @@ def main():
 
     results = run_experiment(cfg)
 
+    print("=== Summary by k ===")
+    for k, metrics in results["by_k"].items():
+        print(
+            f"k={k} | "
+            f"clean_clean={metrics['clean_accuracy_clean_prompt']:.3f} | "
+            f"clean_poisoned={metrics['clean_accuracy_poisoned_prompt']:.3f} | "
+            f"ASR_poisoned={metrics['asr_poisoned_prompt']:.3f}"
+    )
     out_path = Path(args.output)
     out_path.write_text(json.dumps(results, indent=2))
     print(f"Results saved to {out_path.resolve()}")

@@ -78,6 +78,13 @@ def run_experiment(cfg: Dict[str, Any]) -> Dict[str, Any]:
         subset=cfg["dataset_subset"],
     )
 
+    print(
+        "Loaded splits:",
+        "example_pool =", len(example_pool),
+        "| t_clean =", len(t_clean),
+        "| t_attack_base =", len(t_attack_base),
+    )
+
     base_rng = random.Random(cfg["seed"])
 
     results: Dict[str, Any] = {}
