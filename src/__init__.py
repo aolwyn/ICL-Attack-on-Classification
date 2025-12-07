@@ -1,8 +1,8 @@
 __all__ = [
     "config",
     "data",
-    "poisoning",
+    "experiment",
     "prompts",
     "model",
-    "experiment",
+    "poisoning",
 ]
