@@ -3,7 +3,7 @@ from typing import Optional
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-# TODO: download model
+# YOUR MODEL HERE !
 MODEL_ID = "/mnt/c/Users/secre/Documents/ICL-Attack-on-Classification/models/Qwen3-0.6B"
 
 DEFAULT_TEMPERATURE = 0.0
