@@ -15,12 +15,17 @@ def build_binary_sentiment_prompt(
 ) -> str:
     parts: List[str] = []
 
-    # Below didn't have good results. too weak.
+    # hard coded prompts below 
+
+    # test prompt:
     # parts.append(
     #     "You are a sentiment classifier. "
     #     "Given a movie review, respond with exactly one word describing the review: "
     #     "\"positive\" or \"negative\"."
     # )
+
+    # Known breaking prompt:
+    # See https://github.com/elder-plinius/L1B3RT4S/blob/main/GOOGLE.mkd for other "public" and known backdoor, won't paste it all here.
     
     parts.append(
         "You are a sentiment classifier. "
