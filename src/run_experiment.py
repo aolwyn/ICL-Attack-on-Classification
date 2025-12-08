@@ -20,7 +20,7 @@ def main():
         "--max_eval_examples",
         type=int,
         default=None,
-        help="Override max_eval_examples (optional).",
+        help="Override max_eval_examples.",
     )
     args = parser.parse_args()
 

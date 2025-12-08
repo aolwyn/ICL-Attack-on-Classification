@@ -1,7 +1,7 @@
 from typing import List, Dict
 
 """
-    Each exemplar is a dict with keys:
+    STRUCTURE IT AS SUCH,
       - "text": str            # review text (possibly with trigger)
       - "label": str           # "positive" or "negative"
       - "type": str            # "POS_CLEAN" | "NEG_CLEAN" | "POS_TRIGGER"
