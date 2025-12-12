@@ -170,7 +170,7 @@ dmypy.json
 data/
 models/
 
-
+*.json
 
 # Cython debug symbols
 cython_debug/
