@@ -3,7 +3,7 @@ def config() -> dict:
         "dataset_id": "glue",
         "dataset_subset": "sst2",
 
-        "k_values": [1, 2, 4, 8],
+        "k_values": [1,2,4,8,16],
         "trigger": "<z0qwer124>",
 
         "temperature": 0.0,

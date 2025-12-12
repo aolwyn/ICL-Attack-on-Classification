@@ -15,9 +15,9 @@ def build_binary_sentiment_prompt(
 ) -> str:
     parts: List[str] = []
 
-    # hard coded prompts below 
+    # hard coded prompts below , too lazy to automate or aug parser it into config
 
-    # test prompt:
+    # naive prompt:
     # parts.append(
     #     "You are a sentiment classifier. "
     #     "Given a movie review, respond with exactly one word describing the review: "

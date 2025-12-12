@@ -1,0 +1,42 @@
+{
+  "config": {
+    "dataset_id": "glue",
+    "dataset_subset": "sst2",
+    "k_values": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "trigger": "<z0qwer124>",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_new_tokens": 16,
+    "max_example_pool_size": 2000,
+    "max_eval_examples": 200,
+    "max_attack_examples": 500,
+    "seed": 42
+  },
+  "by_k": {
+    "1": {
+      "clean_accuracy_clean_prompt": 0.795,
+      "clean_accuracy_poisoned_prompt": 0.835,
+      "asr_poisoned_prompt": 0.1588785046728972
+    },
+    "2": {
+      "clean_accuracy_clean_prompt": 0.85,
+      "clean_accuracy_poisoned_prompt": 0.85,
+      "asr_poisoned_prompt": 0.16822429906542055
+    },
+    "4": {
+      "clean_accuracy_clean_prompt": 0.825,
+      "clean_accuracy_poisoned_prompt": 0.875,
+      "asr_poisoned_prompt": 0.1588785046728972
+    },
+    "8": {
+      "clean_accuracy_clean_prompt": 0.835,
+      "clean_accuracy_poisoned_prompt": 0.855,
+      "asr_poisoned_prompt": 0.32710280373831774
+    }
+  }
+}

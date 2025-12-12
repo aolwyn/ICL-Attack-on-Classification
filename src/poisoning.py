@@ -14,6 +14,8 @@ def get_type_counts_for_k(k: int) -> Dict[str, int]:
         return {"pos_trigger": 1, "pos_clean": 1, "neg_clean": 2}
     elif k == 8:
         return {"pos_trigger": 1, "pos_clean": 3, "neg_clean": 4}
+    elif k == 16: # test 2 / 1 here
+        return {"pos_trigger": 2, "pos_clean": 4, "neg_clean": 10}
     else:
         raise ValueError(f"Unsupported k={k}. Expected one of {1, 2, 4, 8}.")
 
